@@ -19,7 +19,7 @@ Open <http://localhost:8000>. The page can also be opened directly from `index.h
 3. Set **Source** to **Deploy from a branch**.
 4. Select **main**, choose **/docs**, and save.
 
-The default project URL is <https://profdrluigi.github.io/SpinDoctor/>. This folder prepares the website; it does not change repository settings or publish anything itself. See [GitHub’s publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+The default project URL is <https://profdrluigi.github.io/SpinDoctorGame/>. This folder prepares the website; it does not change repository settings or publish anything itself. See [GitHub’s publishing-source documentation](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
 
 ## Update the page
 
