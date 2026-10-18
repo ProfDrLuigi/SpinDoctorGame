@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#141416">
+  <meta name="description" content="The Macintosh classic returns as a native Swift and SpriteKit game for macOS. Explore 106 reconstructed levels, four difficulty settings, and a familiar world of rotating wands.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Spin Doctor · A classic. A new spin.">
+  <meta property="og:description" content="106 levels. Four difficulty settings. One rotating wand. A native Swift reimplementation of the Macintosh classic.">
+  <meta property="og:image" content="https://profdrluigi.github.io/SpinDoctor/assets/images/sand-box-ii.jpg">
+  <meta property="og:image:alt" content="Level 69, Sand-box II, in the native Spin Doctor port">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>Spin Doctor · A classic. A new spin.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/vendor/bootstrap/bootstrap.bundle.min.js" defer></script>
+  <script src="assets/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg container" aria-label="Main navigation">
+      <a class="navbar-brand brand" href="#top" aria-label="Spin Doctor – home">
+        <svg class="brand-symbol" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 20 31 7"/><circle cx="20" cy="20" r="6"/><circle class="brand-orbit" cx="31" cy="7" r="3"/></svg>
+        <span>SPIN<span class="brand-second">DOCTOR</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#game">The game</a></li>
+          <li class="nav-item"><a class="nav-link" href="#screenshots">Screenshots</a></li>
+          <li class="nav-item"><a class="nav-link" href="#controls">Controls</a></li>
+          <li class="nav-item"><a class="nav-link" href="#project">The project</a></li>
+          <li class="nav-item"><a class="nav-link nav-github" href="https://github.com/ProfDrLuigi/SpinDoctor">GitHub <span aria-hidden="true">↗</span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-grid" id="top" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <div class="col-lg-5 hero-copy">
+            <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Back on the Mac</div>
+            <h1 id="hero-title">A classic.<br><span>A new spin.</span></h1>
+            <p class="hero-description">One wand. One grid. A perfectly timed move. Spin Doctor brings the wonderfully tricky Macintosh game to your Mac, rebuilt in Swift.</p>
+            <div class="d-flex flex-wrap gap-3 hero-actions">
+              <a class="btn btn-accent" href="https://github.com/ProfDrLuigi/SpinDoctor">View on GitHub <span aria-hidden="true">↗</span></a>
+              <a class="btn btn-outline-game" href="#screenshots">Take a look <span aria-hidden="true">↓</span></a>
+            </div>
+            <p class="platform-note"><svg width="15" height="15" viewBox="0 0 20 20" fill="none" aria-hidden="true"><rect x="2" y="3" width="16" height="11" rx="2" stroke="currentColor"/><path d="M6 17h8M10 14v3" stroke="currentColor"/></svg> macOS <span>·</span> Apple Silicon &amp; Intel</p>
+          </div>
+          <div class="col-lg-7 hero-visual">
+            <div class="visual-heading"><span class="tiny-label">SWIFT / SPRITEKIT</span><span class="tiny-label">NATIVE MAC EDITION</span></div>
+            <img class="hero-image" src="assets/images/sand-box-ii.jpg" width="1100" height="814" alt="Spin Doctor: Sand-box II with colored wands, hourglasses, and walls inside the new game frame" fetchpriority="high" decoding="async">
+            <div class="visual-caption"><span><span class="caption-dot" aria-hidden="true"></span> Level 69 · Sand-box II</span><span>Captured from the Swift port</span></div>
+          </div>
+        </div>
+        <div class="hero-bottom"><span>Find your timing. Find your way.</span><a href="#game" aria-label="Explore the game"><span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
+
+    <section class="facts-band" aria-label="The game in numbers">
+      <div class="container">
+        <div class="row g-0">
+          <div class="col-6 col-lg-3 fact"><strong>106<span class="pink">.</span></strong><span>reconstructed levels</span></div>
+          <div class="col-6 col-lg-3 fact"><strong>4<span class="blue">.</span></strong><span>difficulty settings</span></div>
+          <div class="col-6 col-lg-3 fact"><strong>25<span class="yellow">.</span></strong><span>in-game help pages</span></div>
+          <div class="col-6 col-lg-3 fact"><strong class="fact-native">100<span class="blue">% Swift</span></strong><span>native macOS application</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space" id="game" aria-labelledby="game-title">
+      <div class="container">
+        <div class="row gy-4 align-items-end section-heading">
+          <div class="col-lg-7"><p class="eyebrow">01 / The idea</p><h2 id="game-title">Simple to learn.<br>Tricky to put down.</h2></div>
+          <div class="col-lg-5"><p class="section-intro">Your white wand never stops turning. Switch pivots at just the right moment, work your way past obstacles, and reach the rotating goal dot.</p></div>
+        </div>
+        <div class="row g-4 mechanics">
+          <div class="col-md-4">
+            <article class="mechanic mechanic-pink">
+              <div class="mechanic-art" aria-hidden="true"><svg viewBox="0 0 280 110"><path class="diagram-track" d="M50 75H230M50 25H230"/><circle class="diagram-dot" cx="50" cy="75" r="6"/><circle class="diagram-dot" cx="140" cy="75" r="6"/><circle class="diagram-dot" cx="230" cy="75" r="6"/><path class="diagram-wand" d="M140 75 199 23"/><circle class="diagram-pivot" cx="140" cy="75" r="8"/><path class="diagram-arrow" d="M105 30a52 52 0 0 1 53-7m-11-8 11 8-10 9"/></svg></div>
+              <span class="step-number">01</span><h3>Find your rhythm.</h3><p>Swing, bounce, and flip. Three simple moves open up a surprising number of possibilities.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="mechanic mechanic-blue">
+              <div class="mechanic-art" aria-hidden="true"><svg viewBox="0 0 280 110"><circle class="diagram-dot" cx="50" cy="30" r="6"/><circle class="diagram-dot" cx="50" cy="80" r="6"/><circle class="diagram-dot" cx="230" cy="30" r="6"/><circle class="diagram-dot" cx="230" cy="80" r="6"/><path class="diagram-wall" d="M99 14V60H181V100"/><path class="diagram-wand" d="M50 80 94 43"/><circle class="diagram-pivot" cx="50" cy="80" r="8"/><circle class="diagram-danger" cx="211" cy="55" r="7"/><path class="diagram-danger-lines" d="m203 47 16 16m0-16-16 16"/></svg></div>
+              <span class="step-number">02</span><h3>Think one turn ahead.</h3><p>Rings, doors, portals, and burning fuses turn every grid into a different little puzzle.</p>
+            </article>
+          </div>
+          <div class="col-md-4">
+            <article class="mechanic mechanic-yellow">
+              <div class="mechanic-art" aria-hidden="true"><svg viewBox="0 0 280 110"><path class="diagram-track" d="M50 75H140L230 30"/><circle class="diagram-dot" cx="50" cy="75" r="6"/><circle class="diagram-dot" cx="140" cy="75" r="6"/><path class="diagram-wand" d="m140 75 63-32"/><circle class="diagram-pivot" cx="140" cy="75" r="8"/><path class="diagram-star" d="m230 10 5 13 15 7-15 5-5 15-6-15-14-5 14-7Z"/><circle class="diagram-goal" cx="230" cy="30" r="6"/></svg></div>
+              <span class="step-number">03</span><h3>Earn your doctorate.</h3><p>Collect bonuses, beat your personal bests, and work your way through all 106 levels.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space gallery-section" id="screenshots" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="row gy-3 align-items-end section-heading">
+          <div class="col-lg-8"><p class="eyebrow">02 / Screenshots</p><h2 id="gallery-title">Familiar pixels.<br>A new home.</h2></div>
+          <div class="col-lg-4"><p class="section-intro">Original game artwork, a new frame, and levels carefully reconstructed from the original game data.</p></div>
+        </div>
+        <ul class="nav nav-pills screenshot-tabs" id="screenshot-tabs" role="tablist" aria-label="Choose a screenshot">
+          <li class="nav-item" role="presentation"><button class="nav-link active" id="sand-tab" data-bs-toggle="pill" data-bs-target="#sand-panel" type="button" role="tab" aria-controls="sand-panel" aria-selected="true"><span class="tab-index">69</span> Sand-box II</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="gauntlet-tab" data-bs-toggle="pill" data-bs-target="#gauntlet-panel" type="button" role="tab" aria-controls="gauntlet-panel" aria-selected="false"><span class="tab-index">26</span> Gauntlet</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="grid-tab" data-bs-toggle="pill" data-bs-target="#grid-panel" type="button" role="tab" aria-controls="grid-panel" aria-selected="false"><span class="tab-index">01</span> Grid</button></li>
+          <li class="nav-item" role="presentation"><button class="nav-link" id="menu-tab" data-bs-toggle="pill" data-bs-target="#menu-panel" type="button" role="tab" aria-controls="menu-panel" aria-selected="false"><span class="tab-index">⌘</span> Main menu</button></li>
+        </ul>
+        <div class="tab-content screenshot-stage">
+          <div class="tab-pane fade show active" id="sand-panel" role="tabpanel" aria-labelledby="sand-tab" tabindex="0">
+            <figure><button class="screenshot-zoom" type="button" data-bs-toggle="modal" data-bs-target="#screenshot-modal" data-image="assets/images/sand-box-ii.jpg" data-caption="Level 69 · Sand-box II" aria-label="Enlarge the Sand-box II screenshot"><img src="assets/images/sand-box-ii.jpg" width="1100" height="814" alt="Level 69: colored wands, walls, rings, and hourglasses" loading="lazy" decoding="async"><span class="zoom-label">Enlarge <span aria-hidden="true">↗</span></span></button><figcaption><strong>69 / Sand-box II</strong><span>Hourglasses, colored routes, and plenty of possibilities.</span></figcaption></figure>
+          </div>
+          <div class="tab-pane fade" id="gauntlet-panel" role="tabpanel" aria-labelledby="gauntlet-tab" tabindex="0">
+            <figure><button class="screenshot-zoom" type="button" data-bs-toggle="modal" data-bs-target="#screenshot-modal" data-image="assets/images/gauntlet.jpg" data-caption="Level 26 · Gauntlet" aria-label="Enlarge the Gauntlet screenshot"><img src="assets/images/gauntlet.jpg" width="1100" height="814" alt="Level 26: narrow passages, switches, portals, and a long fuse" loading="lazy" decoding="async"><span class="zoom-label">Enlarge <span aria-hidden="true">↗</span></span></button><figcaption><strong>26 / Gauntlet</strong><span>Tight passages and dangerous encounters. Timing is everything.</span></figcaption></figure>
+          </div>
+          <div class="tab-pane fade" id="grid-panel" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+            <figure><button class="screenshot-zoom" type="button" data-bs-toggle="modal" data-bs-target="#screenshot-modal" data-image="assets/images/grid.jpg" data-caption="Level 1 · Grid" aria-label="Enlarge the Grid screenshot"><img src="assets/images/grid.jpg" width="1100" height="814" alt="Level 1: the opening dot grid and instructions" loading="lazy" decoding="async"><span class="zoom-label">Enlarge <span aria-hidden="true">↗</span></span></button><figcaption><strong>01 / Grid</strong><span>Where it all begins: a grid, your wand, and a goal.</span></figcaption></figure>
+          </div>
+          <div class="tab-pane fade" id="menu-panel" role="tabpanel" aria-labelledby="menu-tab" tabindex="0">
+            <figure><button class="screenshot-zoom" type="button" data-bs-toggle="modal" data-bs-target="#screenshot-modal" data-image="assets/images/main-menu.jpg" data-caption="Main menu · Doctors of Spinology" aria-label="Enlarge the main menu screenshot"><img src="assets/images/main-menu.jpg" width="1100" height="786" alt="Main menu with the SPIN logo, level selection, difficulty settings, and high scores" loading="lazy" decoding="async"><span class="zoom-label">Enlarge <span aria-hidden="true">↗</span></span></button><figcaption><strong>⌘ / Main menu</strong><span>The animated SPIN logo, level selection, and your Doctors of Spinology.</span></figcaption></figure>
+          </div>
+        </div>
+        <p class="image-note">All screenshots show the native Swift port.</p>
+      </div>
+    </section>
+
+    <section class="section-space difficulty-section" aria-labelledby="difficulty-title">
+      <div class="container">
+        <div class="row gy-5 align-items-center">
+          <div class="col-lg-6">
+            <p class="eyebrow">03 / The challenge</p><h2 id="difficulty-title">Your pace.<br>Your next challenge.</h2>
+            <p class="section-intro difficulty-intro">Learn the route, then race the clock. The four original difficulty settings change the pace and how time contributes to your score.</p>
+            <div class="difficulty-options" role="group" aria-label="Difficulty for the tempo preview">
+              <button class="difficulty-option is-selected" type="button" data-difficulty="0" aria-pressed="true"><span>01</span>Pre-Med</button>
+              <button class="difficulty-option" type="button" data-difficulty="1" aria-pressed="false"><span>02</span>Intern</button>
+              <button class="difficulty-option" type="button" data-difficulty="2" aria-pressed="false"><span>03</span>Resident</button>
+              <button class="difficulty-option" type="button" data-difficulty="3" aria-pressed="false"><span>04</span>Specialist</button>
+            </div>
+            <p class="difficulty-note" id="difficulty-note" aria-live="polite">Pre-Med: no time limit. Find your rhythm and learn the grid at your own pace.</p>
+          </div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="tempo-panel">
+              <div class="tempo-header"><span class="tiny-label">TEMPO PREVIEW</span><button id="animation-toggle" class="animation-toggle" type="button" aria-pressed="false" aria-label="Pause the tempo preview">Pause <span aria-hidden="true">Ⅱ</span></button></div>
+              <div class="tempo-board" role="img" aria-label="Simplified preview of the rotating wand">
+                <div class="tempo-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+                <div class="tempo-orbit" aria-hidden="true"></div><div class="tempo-wand" aria-hidden="true"></div><div class="tempo-pivot" aria-hidden="true"></div>
+              </div>
+              <div class="tempo-footer"><span id="tempo-name">Pre-Med</span><span class="tempo-rate" id="tempo-rate">1.00×</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space controls-section" id="controls" aria-labelledby="controls-title">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-4"><p class="eyebrow">04 / The controls</p><h2 id="controls-title">Three moves.<br>At your fingertips.</h2><p class="section-intro mt-4">The wand turns by itself. You decide when to change its pivot.</p><p class="controller-note"><span class="blue" aria-hidden="true">＋</span> Prefer a controller? The Mac app supports configurable PlayStation, Xbox, and generic gamepads.</p></div>
+          <div class="col-lg-7 offset-lg-1">
+            <dl class="control-list">
+              <div><dt><kbd>⌘</kbd><span>Swing <small>Hold Command</small></span></dt><dd>Hold Command to swing to the next pivot.</dd></div>
+              <div><dt><kbd>⌥</kbd><span>Bounce <small>Hold Option</small></span></dt><dd>Hold Option to use the bounce move.</dd></div>
+              <div><dt><span class="key-pair"><kbd>⌘</kbd><kbd>⌥</kbd></span><span>Flip <small>Hold both</small></span></dt><dd>Hold Command and Option together to flip.</dd></div>
+              <div><dt><kbd class="key-space">Space</kbd><span>Reverse direction</span></dt><dd>Press the space bar to instantly reverse your rotation.</dd></div>
+            </dl>
+            <div class="utility-keys"><span><kbd>P</kbd> Pause</span><span><kbd>R</kbd> Restart</span><span><kbd>S</kbd> Save</span><span><kbd>M</kbd> Sound</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-space project-section" id="project" aria-labelledby="project-title">
+      <div class="container">
+        <div class="row gy-5">
+          <div class="col-lg-6"><p class="eyebrow">05 / The project</p><h2 id="project-title">Original data.<br>A fresh perspective.</h2><p class="section-intro mt-4">Spin Doctor is being rebuilt for today’s Macs from the original 68k/PowerPC game. Original level data, artwork, programs, and reference recordings form the foundation of the Swift port.</p><p class="project-copy">The goal is to preserve the feel of the original. All 106 levels and their goals are implemented, with timing, rendering, and audio still being checked against the classic game.</p><div class="tech-tags" aria-label="Technologies"><span>Swift</span><span>SpriteKit</span><span>SwiftUI</span><span>macOS</span></div></div>
+          <div class="col-lg-5 offset-lg-1">
+            <div class="project-details">
+              <h3>Already part of the game</h3>
+              <ul class="included-list"><li>106 reconstructed levels and four difficulty settings</li><li>Save and resume with <code>.spindoctor</code> files</li><li>Personal bests and a Doctors of Spinology leaderboard</li><li>25 help pages with animated examples</li><li>English and German game interfaces</li><li>An animated main menu and campaign endings</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="build-panel">
+          <div><span class="tiny-label">FOR DEVELOPERS &amp; THE CURIOUS</span><h3>Build it. Give it a spin.</h3><p>Clone the repository, open it in Xcode, select the “Spin Doctor” scheme, and press <kbd>⌘ R</kbd>. Select your own signing team if needed.</p></div>
+          <div class="build-code"><div class="code-toolbar"><span>Terminal</span><button class="copy-button" id="copy-command" type="button">Copy <span aria-hidden="true">⧉</span></button></div><pre tabindex="0"><code id="clone-command">git clone https://github.com/ProfDrLuigi/SpinDoctor.git
+open "SpinDoctor/Spin Doctor.xcodeproj"</code></pre><span class="copy-status" id="copy-status" role="status"></span></div>
+        </div>
+        <div class="row gy-4 faq-row">
+          <div class="col-lg-4"><h3 class="faq-title">One more question?</h3><p class="section-intro">A few things worth knowing.</p></div>
+          <div class="col-lg-7 offset-lg-1"><div class="accordion accordion-flush" id="faq">
+            <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-mac" aria-expanded="false" aria-controls="faq-mac">Can I play Spin Doctor in my browser?</button></h4><div id="faq-mac" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Spin Doctor is a native macOS app for Apple Silicon and Intel. This website is a showcase of the project. You’ll find the source code and project documentation on GitHub.</div></div></div>
+            <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-original" aria-expanded="false" aria-controls="faq-original">Does the port match the original completely?</button></h4><div id="faq-original" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">All 106 levels are implemented. The reconstruction uses original data, analyzed program code, screenshots, and recordings of the classic game. Full timing, visual, and audio parity is still being evaluated. The repository documents the current status.</div></div></div>
+            <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-saves" aria-expanded="false" aria-controls="faq-saves">How do saved games work?</button></h4><div id="faq-saves" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">The Swift port saves ongoing games in its own <code>.spindoctor</code> format. Load a file using “Open…” and press <kbd>P</kbd> to resume. Saved games from the classic Macintosh version cannot be imported.</div></div></div>
+          </div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-section" aria-labelledby="closing-title"><div class="container"><div class="closing-inner"><div><p class="eyebrow">Your next move</p><h2 id="closing-title">Time for another round.</h2></div><a class="btn btn-accent" href="https://github.com/ProfDrLuigi/SpinDoctor">Explore the project <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container"><div class="footer-top"><a class="footer-brand" href="#top">SPIN <span>DOCTOR</span></a><div><a href="https://github.com/ProfDrLuigi/SpinDoctor">Source code <span aria-hidden="true">↗</span></a><a href="https://github.com/ProfDrLuigi/SpinDoctor/issues">Report an issue <span aria-hidden="true">↗</span></a><a href="#top">Back to top ↑</a></div></div><div class="footer-bottom"><p>Original game by Callisto Corporation. Independent Swift port by <a href="https://github.com/ProfDrLuigi">ProfDrLuigi</a>.</p><p>Rebuilt in Swift. Brought to the web with <a href="https://getbootstrap.com/">Bootstrap</a>.</p></div></div></footer>
+
+  <div class="modal fade" id="screenshot-modal" tabindex="-1" aria-labelledby="screenshot-modal-title" aria-hidden="true"><div class="modal-dialog modal-xl modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-6" id="screenshot-modal-title">Screenshot</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body"><img id="screenshot-modal-image" class="img-fluid" alt="" width="2000" height="1480"></div></div></div></div>
+</body>
+</html>
