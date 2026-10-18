@@ -10,7 +10,7 @@ Run from the repository root:
 python3 -m http.server 8000 --directory docs
 ```
 
-Open <http://localhost:8000>. The page can also be opened directly from `index.html`; browser clipboard restrictions then use a text-selection fallback.
+Open <http://localhost:8000>. The page can also be opened directly from `index.html`.
 
 ## Publish with GitHub Pages
 
@@ -25,7 +25,7 @@ The default project URL is <https://profdrluigi.github.io/SpinDoctorGame/>. This
 
 - `index.html`: content, gallery, controls, project links, and metadata.
 - `assets/site.css`: responsive layout, color palette, and image size limits.
-- `assets/site.js`: tempo preview, motion preference handling, image modal, mobile navigation, and copy button.
+- `assets/site.js`: tempo preview, motion preference handling, image modal, and mobile navigation.
 - `assets/images/`: four optimized screenshots from the Swift port. Each is at most 1,100 pixels wide; original game assets and research captures are unchanged. Images are displayed at smaller sizes and enlarge only on request.
 - `assets/vendor/bootstrap/`: locally bundled CSS and JavaScript, with Bootstrap’s MIT license. Source-map comments are omitted because the optional source maps are not shipped.
 - `.nojekyll`: serve the folder as plain static files.

@@ -59,25 +59,3 @@ document.querySelectorAll("#navigation a[href^='#']").forEach((link) => {
     }
   });
 });
-
-let copyTimer;
-document.getElementById("copy-command").addEventListener("click", async () => {
-  const code = document.getElementById("clone-command");
-  const button = document.getElementById("copy-command");
-  const status = document.getElementById("copy-status");
-  try {
-    await navigator.clipboard.writeText(code.textContent.trim());
-    button.textContent = "Copied ✓";
-    status.textContent = "Commands copied to your clipboard.";
-  } catch {
-    // Local files and restricted browsers may not expose the Clipboard API.
-    const selection = window.getSelection();
-    const range = document.createRange();
-    range.selectNodeContents(code);
-    selection.removeAllRanges();
-    selection.addRange(range);
-    status.textContent = "Commands selected. Press ⌘C (or Ctrl+C) to copy.";
-  }
-  clearTimeout(copyTimer);
-  copyTimer = setTimeout(() => { button.textContent = "Copy ⧉"; status.textContent = ""; }, 5000);
-});
