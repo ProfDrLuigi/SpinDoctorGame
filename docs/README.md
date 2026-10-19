@@ -12,6 +12,12 @@ python3 -m http.server 8000 --directory docs
 
 Open <http://localhost:8000>. The page can also be opened directly from `index.html`.
 
+## Optional HD graphics
+
+The app starts with **Classic**, the original artwork. Players can opt into **New graphics**, which draws recreated vector artwork at high resolution without upscaling the original sprites. Select a mode in **Settings → Graphics**, or press **Control+Option+C** to switch immediately, including during gameplay. The selected mode is remembered across app launches.
+
+The graphics option changes presentation only; level layouts, rules, and timing stay the same. Animated help pages retain their original video recordings. The website describes this option in the feature list, controls, and FAQ.
+
 ## Publish with GitHub Pages
 
 1. Commit and push the `docs` folder to `main`.

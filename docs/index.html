@@ -132,7 +132,7 @@
             <figure><button class="screenshot-zoom" type="button" data-bs-toggle="modal" data-bs-target="#screenshot-modal" data-image="assets/images/main-menu.jpg" data-caption="Main menu · Doctors of Spinology" aria-label="Enlarge the main menu screenshot"><img src="assets/images/main-menu.jpg" width="1100" height="786" alt="Main menu with the SPIN logo, level selection, difficulty settings, and high scores" loading="lazy" decoding="async"><span class="zoom-label">Enlarge <span aria-hidden="true">↗</span></span></button><figcaption><strong>⌘ / Main menu</strong><span>The animated SPIN logo, level selection, and your Doctors of Spinology.</span></figcaption></figure>
           </div>
         </div>
-        <p class="image-note">All screenshots show the native Swift port.</p>
+        <p class="image-note">All screenshots show the native Swift port. Classic graphics are the default; HD artwork is optional.</p>
       </div>
     </section>
 
@@ -175,7 +175,7 @@
               <div><dt><span class="key-pair"><kbd>⌘</kbd><kbd>⌥</kbd></span><span>Flip <small>Hold both</small></span></dt><dd>Hold Command and Option together to flip.</dd></div>
               <div><dt><kbd class="key-space">Space</kbd><span>Reverse direction</span></dt><dd>Press the space bar to instantly reverse your rotation.</dd></div>
             </dl>
-            <div class="utility-keys"><span><kbd>P</kbd> Pause</span><span><kbd>R</kbd> Restart</span><span><kbd>S</kbd> Save</span><span><kbd>M</kbd> Sound</span></div>
+            <div class="utility-keys"><span><kbd>P</kbd> Pause</span><span><kbd>R</kbd> Restart</span><span><kbd>S</kbd> Save</span><span><kbd>M</kbd> Sound</span><span><kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>C</kbd> Graphics mode</span></div>
           </div>
         </div>
       </div>
@@ -188,7 +188,7 @@
           <div class="col-lg-5 offset-lg-1">
             <div class="project-details">
               <h3>Already part of the game</h3>
-              <ul class="included-list"><li>106 reconstructed levels and four difficulty settings</li><li>Save and resume with <code>.spindoctor</code> files</li><li>Personal bests and a Doctors of Spinology leaderboard</li><li>25 help pages with animated examples</li><li>English and German game interfaces</li><li>An animated main menu and campaign endings</li></ul>
+              <ul class="included-list"><li>106 reconstructed levels and four difficulty settings</li><li>Original Classic artwork by default, with optional HD graphics</li><li>Save and resume with <code>.spindoctor</code> files</li><li>Personal bests and a Doctors of Spinology leaderboard</li><li>25 help pages with animated examples</li><li>English and German game interfaces</li><li>An animated main menu and campaign endings</li></ul>
             </div>
           </div>
         </div>
@@ -197,6 +197,7 @@
           <div class="col-lg-7 offset-lg-1"><div class="accordion accordion-flush" id="faq">
             <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-mac" aria-expanded="false" aria-controls="faq-mac">Can I play Spin Doctor in my browser?</button></h4><div id="faq-mac" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Spin Doctor is a native macOS app for Apple Silicon and Intel. This website is a showcase of the project. You’ll find the source code and project documentation on GitHub.</div></div></div>
             <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-original" aria-expanded="false" aria-controls="faq-original">Does the port match the original completely?</button></h4><div id="faq-original" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">All 106 levels are implemented. The reconstruction uses original data, analyzed program code, screenshots, and recordings of the classic game. Full timing, visual, and audio parity is still being evaluated. The repository documents the current status.</div></div></div>
+            <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-graphics" aria-expanded="false" aria-controls="faq-graphics">Can I choose between Classic and HD graphics?</button></h4><div id="faq-graphics" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">Yes. Classic uses the original artwork and is enabled by default. The optional “New graphics” mode uses newly drawn high-resolution vector artwork based on the original designs, without upscaling the original sprites. Choose a mode in Settings → Graphics, or press <kbd>Control</kbd> + <kbd>Option</kbd> + <kbd>C</kbd> to switch immediately, including during a game. Your choice is remembered after restarting the app. Switching changes the artwork only: level layouts, rules, and timing stay the same. Animated help pages keep their original video recordings.</div></div></div>
             <div class="accordion-item"><h4 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-saves" aria-expanded="false" aria-controls="faq-saves">How do saved games work?</button></h4><div id="faq-saves" class="accordion-collapse collapse" data-bs-parent="#faq"><div class="accordion-body">The Swift port saves ongoing games in its own <code>.spindoctor</code> format. Load a file using “Open…” and press <kbd>P</kbd> to resume. Saved games from the classic Macintosh version cannot be imported.</div></div></div>
           </div></div>
         </div>
